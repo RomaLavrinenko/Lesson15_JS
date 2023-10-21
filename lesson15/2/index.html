@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        .box{
+            width: 900px;
+            height: 500px;
+            background-color: white;
+            margin: 100px auto;
+            display: flex;
+        }
+        .block-one , .block-two{
+            width: 50%;
+            border: 1px solid black;
+            padding: 10px 20px;
+        }
+        input[type="checkbox"] {
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .error , .error-two{
+            width: 700px;
+            height: 80px;
+            background-color: lightcoral;
+            padding: 10px 20px 0;
+            position: absolute;
+            left: 400px;
+            top: 250px ;
+            display: none;
+        }
+        .hrest , .hreste{
+            width: 30px;
+            height: 30px;
+            position: relative;
+            left: 670px;
+            bottom: 65px;
+            background-image: url(https://img2.freepng.ru/20180422/bre/kisspng-computer-icons-cross-delete-button-desktop-wallpap-treasure-map-5adce4c8e8b284.6651471215244259289531.jpg);
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;        
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="block-one">
+            <h2 style="color: red;">Список завдань</h2>
+            <input class="chack" type="checkbox" name="list"  id="html5"><label class="html5" for="html5">HTML5</label><br>
+            <input class="chack" type="checkbox" name="list"  id="css3"><label class="css3" for="css3">CSS3</label><br>
+            <input class="chack" type="checkbox" name="list"  id="sass"><label class="sass" for="sass">SASS/SCSS</label><br>
+            <input class="chack" type="checkbox" name="list"  id="Bootstrap"><label class="Bootstrap" for="Bootstrap">BOOTSTRAP</label><br>
+        </div>
+        <div class="block-two" style="text-align: center;">
+            <h2 style="color: red;">Додати нове завдання</h2>
+            <input type="text" class="inptext" name="nameCheck" style="width: 250px; height: 25px; margin-bottom: 20px; outline: none; border: none; border-bottom: solid 2px black;"><br>
+            <button class="butt" style="width: 80px; height: 40px; color: white; background-color: black;">додати</button>
+        </div>
+    </div>
+    <div class="error">
+        <p style="font-size: 20px; margin: 0;">Попередження!</p>
+        <p>Пусте поле не можна добавити</p>
+        <div class="hrest"></div>
+    </div>
+    <div class="error-two">
+        <p style="font-size: 20px; margin: 0;">Попередження!</p>
+        <p>Останній таск зі списку Ви не можете видалити.</p>
+        <div class="hreste"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

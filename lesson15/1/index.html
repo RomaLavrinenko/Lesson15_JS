@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .top-box , .bot-box{
+            height: 800px;
+            background-color: lightgray;
+            text-align: center; 
+        }
+        .toph , .both{
+            position: relative;       
+            top: 450px;
+        }
+        .mid-box{
+            height: 500px;
+            padding: 40px 100px;
+            
+  
+        }
+    </style>
+</head>
+<body>
+    <div class="top-box">
+        <h2 class="toph">Scroll down</h2>
+    </div>
+    <div class="mid-box">
+        <h2 class="midh" style="margin: 20px 0; font-size: 30px;position: relative; ">“slide from left”</h2>
+        <div class="line" style="width: 300px; height: 3px; background-color: red; margin-bottom: 100px; position: relative;"></div>
+        <div class="img" style="background-image: url(https://azbyka.ru/wp-content/uploads/2016/07/priroda.jpg); position: relative; width: 500px; height: 300px; position: absolute; right: 100px;"></div>
+    </div>
+    <div class="bot-box">
+        <h2 class="both">Scroll up</h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
